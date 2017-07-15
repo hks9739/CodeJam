@@ -1,4 +1,4 @@
-#Problem
+# Problem
 At the Infinite House of Pancakes, there are only finitely many pancakes, but there are infinitely many diners who would be willing to eat them! When the restaurant opens for breakfast, among the infinitely many diners, exactly D have non-empty plates; the ith of these has Pi pancakes on his or her plate. Everyone else has an empty plate.
 
 Normally, every minute, every diner with a non-empty plate will eat one pancake from his or her plate. However, some minutes may be special. In a special minute, the head server asks for the diners' attention, chooses a diner with a non-empty plate, and carefully lifts some number of pancakes off of that diner's plate and moves those pancakes onto one other diner's (empty or non-empty) plate. No diners eat during a special minute, because it would be rude.
@@ -7,13 +7,13 @@ You are the head server on duty this morning, and it is your job to decide which
 
 Breakfast ends when there are no more pancakes left to eat. How quickly can you make that happen?
 
-#Input
+# Input
 The first line of the input gives the number of test cases, T. T test cases follow. Each consists of one line with D, the number of diners with non-empty plates, followed by another line with D space-separated integers representing the numbers of pancakes on those diners' plates.
 
-#Output
+# Output
 For each test case, output one line containing "Case #x: y", where x is the test case number (starting from 1) and y is the smallest number of minutes needed to finish the breakfast.
 
-#Limits
+# Limits
 
 1 ≤ T ≤ 100.
 
@@ -27,7 +27,7 @@ Large dataset
 1 ≤ D ≤ 1000.
 1 ≤ Pi ≤ 1000.
 
-#Sample
+# Sample
 
 Input 
 ```
