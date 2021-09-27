@@ -32,4 +32,23 @@ int main(void)
   
 	return 0;
 }
+
+/**
+ * 오름차순으로 정렬된 arr에서 begin과 end 사이에 target 값보다 큰 첫번째 index 
+ */
+static int lower_bound(int *arr, int begin, int end, int target)
+{
+	int mid;
+
+	while (begin < end) {
+		mid = (begin + end) / 2;
+		if (arr[mid] < target)
+			begin = mid + 1;
+		else
+			end = mid;
+	}
+
+	return end;
+}
+
 ```
