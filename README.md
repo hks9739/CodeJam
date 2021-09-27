@@ -5,7 +5,13 @@ Exercise for coding test
 
 # 예제 소스
 
-## Quick Sort
+## 매크로
+```c
+#define min(a, b) (((a) < (b)) ? (a) : (b))
+
+```
+
+## 정렬
 ```c
 #include <stdlib.h>
 
