@@ -14,6 +14,7 @@ static int compare(const void *a1, const void *a2)
 	const int *v1 = a1;
 	const int *v2 = a2;
 
+	// 오름 차순 정렬인 경우
 	return *v1 - *v2;
 }
 
