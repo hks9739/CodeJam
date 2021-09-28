@@ -34,21 +34,22 @@ int main(void)
 }
 
 /**
- * 오름차순으로 정렬된 arr에서 begin과 end 사이에 target 값보다 큰 첫번째 index 
+ * 오름차순으로 정렬된 arr에서 first와 last index 사이에 value 값보다 큰 첫번째 index 
  */
-static int lower_bound(int *arr, int begin, int end, int target)
+static int lower_bound(int *arr, int first, int last, int value)
 {
 	int mid;
 
-	while (begin < end) {
-		mid = (begin + end) / 2;
-		if (arr[mid] < target)
-			begin = mid + 1;
+	while (first < last) {
+		mid = (first + last) / 2;
+		if (arr[mid] < value)
+			first = mid + 1;
 		else
-			end = mid;
+			last = mid;
 	}
 
-	return end;
+	return last;
 }
+
 
 ```
